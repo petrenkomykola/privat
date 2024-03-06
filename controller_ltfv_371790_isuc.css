@@ -1,0 +1,19 @@
+83 / 60,21,1,71,45,13,48,78,58,47,88,76,10,53,16,97,86,56,28,87,61,51,32,40,95,20,17,94,63,84,47,21,72,25,16,7,35,15,16,11,3,18,54,79,6,59,73,82,51,54,84,2,41,6,10,38,60,79,46,57,45,23,25,5,64,53,78,13,55,61,85,88,63,99,53,40,95,20,81,79,29,16,95,66,63,14,21
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const isEven = num => num % 2 === 0;
+15,94,25,60,15,45,89,79,4,72,84,79,20,72,56,39,22,26,23,18,99,88,5,28,22,8,46,19,24,42,91,48,80,0,98,83,46,14,53,92,94,20,20,27,61,25,47,11,87,84,77,81,39,44,83,54,41,87,45,79,82,88,65,39,70,50,83,62,21,26,48,34,31,18,61,45,52,41,97 / grape
+const isPalindrome = str => str === str.split("").reverse().join("");
+40,80,46,32,69,10,95,33,13,97,60,82,15,23,83,23,44,59,99,64,93,16,51,99,93,30,57,97,73,78,12,12,64,39,9,12,79,54,68,83,22,94,82,14,88,89,44,94,88,63,85,63,13,57,89,62,79,90,30,24 + true
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
